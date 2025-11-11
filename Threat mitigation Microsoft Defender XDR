@@ -1,0 +1,22 @@
+## Explore Extended Detection & Response (XDR) use cases ##
+
+Detection of Threat
+Microsoft Defender for Endpoints (MDE) detects attacks, raises alert to security opeprations, provides
+details about the threat. User access is disabled from the device while infected. MDE communicates to Intune
+the risk level on the endpoint has changed. Intune triggers and marks the account as noncompliant, Microsoft
+Entra ID blocks user access to apps.
+
+Remediation
+MDE - either automated remediated, analyst approval automated remediation, analys manual investigation of threat.
+MDE adds information on the attack to Microsoft's Threat Intelligence system.
+
+Share Intelligence and Restore Access
+Once remediated, MDE signals Intune to change device risk status. Microsoft Entra ID allow access.
+The threat signals in Microsoft Threat Intelligence are used by Microsoft tools to detect and remediate threats elsewhere.
+
+Access Restricted
+While Intune signals non-compliance, access is restricted. New requests are blocks, current access that supports Continuous
+Access Evalution (CAE) are blocked also. This only applies to corporate resources (you can use youtube)
+
+Acess Restored
+After Remediation, access is restored. 
